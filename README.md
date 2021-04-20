@@ -51,7 +51,7 @@ https://github.com/kristenpicard
 
 ![Demo:](/img/1.gif)
 
-[Click this link to view a video that demonstrates the application functionality](https://drive.google.com/file/d/1A5T_zZhgnOfN1vLi5HZgVVCoTgHOnL--/view)
+[Click this link to view a video that demonstrates the application functionality](https://drive.google.com/file/d/1JWv7QbWPHdHR37n8iqXT2i-6NKjL9TG_/view?usp=sharing)
 
 ## Questions
 
