@@ -3,15 +3,22 @@ const { Tag, Product, ProductTag } = require("../../models");
 
 // The `/api/tags` endpoint
 // -------------------------------K10 not ready
-router.get("/", (req, res) => {
+router.get("/", async (req, res) => {
   // find all tags
-  // be sure to include its associated Product data
-  // try {
-  //   const tagData = await Tag.findAll();
-  //   res.status(200).json(tagData);
-  // } catch (err) {
-  //   res.status(500).json(err);
-  // }
+  try {
+    const tagData = await Tag.findAll({
+      // be sure to include its associated Product data
+      include: [
+        {
+          model: Product,
+          attributes: ["id", "product_name", "price", "stock", "category_id"],
+        },
+      ],
+    });
+    res.status(200).json(tagData);
+  } catch (err) {
+    res.status(500).json(err);
+  }
 });
 
 router.get("/:id", (req, res) => {
