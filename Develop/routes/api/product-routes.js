@@ -63,10 +63,6 @@ router.post("/", (req, res) => {
       tagIds: [1, 2, 3, 4]
     }
   */
-  // -------------------------------------------
-  // Note that the functionality for creating the many-to-many
-  // relationship for products has already been completed for you.
-  // -------------------------------------------
 
   Product.create(req.body)
     .then((product) => {
